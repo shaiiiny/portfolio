@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3%;
+  padding-left: 13%;
+  padding-right: 13%;
+  background-color: #f2f2f2;
+}
+
+.logo a {
+  color: red;
+  font-family: Unbounded;
+  font-size: 2.5rem;
+  text-decoration: none;
+
+}
+
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  margin: 0 0.875rem;
+  font-size: 1.25rem;
+}
+
+.nav-links ul li a:hover {
+  color: red;
+
+}
+
+.main-page {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2%;
+  padding-left: 13%;
+  padding-right: 13%;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1 {
+  flex-basis: 50%;
+  margin-top: 6.563rem;
+  animation: slideInLeft;
+  animation-duration: 2s;
+}
+
+.col-1 p {
+  font-weight: bold;
+  font-size: 1.375rem;
+  margin-bottom: 0.625rem;
+
+}
+
+.intro-below p {
+  margin-top: 0.625rem;
+  font-weight: lighter;
+  font-size: 1.563rem;
+
+}
+
+span {
+  font-weight: bold;
+  font-size: 2.063rem;
+}
+
+.col-2 img {
+  margin-left: 10%;
+  width: 39.375rem;
+  height: 40.938rem;
+  animation: slideInRight;
+  animation-duration: 2s;
+}
+
+/* ABOUT */
+.page-about {
+  width: 100%;
+  height: 100%;
+  padding-left: 13%;
+  padding-right: 13%;
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
+
+.page-about h1 {
+  font-size: 3.75rem;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.divider h1 {
+  color: #FF647F;
+  text-align: center;
+
+}
+
+.col-1-about h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.about-me p {
+  font-size: 1.25rem;
+}
+
+/* PROJECTS */
+.page-projects {
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+.page-projects h1 {
+  font-size: 3.75rem;
+  text-align: center;
+  font-weight: bold;
+} 
+
+.project {
+  width: 80%;
+  margin: 3.75rem auto;
+  text-align: center;
+  border: 0.063rem solid #333;
+  border-radius: 0.625rem;
+  box-shadow: 0.125rem 0.125rem 0.625rem #ccc;
+  padding: 1.875rem;
+}
+
+.project h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.project p {
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+
+.project img {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  border-radius: 0.625rem;
+}
+
+.project a {
+  display: block;
+  width: 9.375rem;
+  margin: 0 auto;
+  padding: 0.625rem 1.25rem;
+  background-color: #FF647F;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.project a:hover {
+  color: pink;
+}
+
+
+/* SKILLS */
+.page-skill {
+  padding-top: 2%;
+  padding-left: 13%;
+  padding-right: 13%;
+  padding-bottom: 3%;
+}
+
+.page-skill  h1{
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.skills-info img {
+  width: 80px;
+  height: 80px;
+}
+
+.skills {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.divider h2{
+font-size: 20px;
+text-align: center;
+font-style: italic;
+}
+
+
+/* CONTACT */
+#contact-form {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding-bottom: 7%;
+}
+
+#contact-form h2{
+  font-size: 50px;
+
+}
+
+#contact-form label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+#contact-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #FF647F;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #fe4463;
+}
+
+
+/* FOOTER */
+footer {
+  background: #1A1E25;
+  color: #868c96;
+  
+}
+footer p {
+  padding: 40px 0;
+  text-align: center;
+}
+
+body {
+  position: relative;
+ }
+
+.home {
+  position: fixed;
+  right: 0;
+  top: 93%;
+ 
+}
+.home img {
+  height: auto;
+  width: 3rem;
+}
+
